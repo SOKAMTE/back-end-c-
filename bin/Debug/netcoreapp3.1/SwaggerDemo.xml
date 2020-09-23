@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>offreService</name>
+    </assembly>
+    <members>
+        <member name="M:offreService.Controllers.ClientController.GetAllClient">
+            <summary>
+            Retourne la liste des clients
+            </summary>
+            <remarks>Je manque d'imagination</remarks>  
+            <response code="200">client selectionné</response>
+            <response code="404">client introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.ClientController.Details(System.Nullable{System.Int32})">
+            <summary>
+            Retourne un client specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du client a retourné</param>   
+            <response code="200">client selectionné</response>
+            <response code="404">client introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.ClientController.Create(offreService.Models.Client)">
+            <summary>
+            Créer un client à partir de ses attributs
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="entity">objet entity de la classe client du Client à créer</param>  
+            <response code="200">client selectionné</response>
+            <response code="404">client introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.ClientController.PutTodoItem(System.Int64,offreService.Models.Client)">
+            <summary>
+            modifie un client specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du client à modifier</param>   
+            <param name="entity">classe d'entité du client à modifier</param>
+            <response code="200">client selectionné</response>
+            <response code="404">client introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.ClientController.DeleteClient(System.Int32)">
+            <summary>
+            supprime un client specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du client à supprimer</param>   
+            <response code="200">client selectionné</response>
+            <response code="404">client introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+    </members>
+</doc>
