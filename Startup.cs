@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using offreService.Data;
 using Microsoft.EntityFrameworkCore;
+using offreService.Repository;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace offreService
@@ -42,6 +43,14 @@ namespace offreService
  
                 c.IncludeXmlComments(filePath);
             });
+
+            //Configuration du namespace repository
+            services.AddScoped<IAdminRepository, AdminRepository>();
+            services.AddScoped<IArticleRepository, ArticleRepository>();
+            services.AddScoped<IArticleTypeRepository, ArticleTypeRepository>();
+            services.AddScoped<ICommentaireRepository, CommentaireRepository>();
+            services.AddScoped<ICompteRepository, CompteRepository>();
+            services.AddScoped<IDiscussionRepository, DiscussionRepository>();
 
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>

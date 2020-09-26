@@ -4,13 +4,193 @@
         <name>offreService</name>
     </assembly>
     <members>
+        <member name="M:offreService.Controllers.AdminController.GetAdmin">
+            <summary>
+            Retourne la liste des Admins
+            </summary>
+            <remarks>Je manque d'imagination</remarks>  
+            <response code="200">Admin selectionné</response>
+            <response code="404">Admin introuvable</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.AdminController.GetAdmin(System.Int32)">
+            <summary>
+            Retourne un Admin specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du Admin a retourné</param>   
+            <response code="200">Admin selectionné</response>
+            <response code="404">Admin introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.AdminController.CreateAdmin(offreService.Models.Admin)">
+            <summary>
+            Créer un admin à partir de ses attributs
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="admin">objet admin de la classe admin du Admin à créer</param>  
+            <response code="200">admin selectionné</response>
+            <response code="404">admin introuvable pour l'attribut specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.AdminController.UpdateAdmin(System.Int32,offreService.Models.Admin)">
+            <summary>
+            modifie un admin specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du admin à modifier</param>   
+            <param name="admin">classe d'entité du admin à modifier</param>
+            <response code="200">admin selectionné</response>
+            <response code="404">admin introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.AdminController.DeleteAdmin(System.Int32)">
+            <summary>
+            supprime un admin specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du admin à supprimer</param>   
+            <response code="200">admin selectionné</response>
+            <response code="404">admin introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.AdminController.Search(System.String)">
+            <summary>
+            recherche un admin specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="name">valeur de l'admin à rechercher</param>   
+            <response code="200">admin recherché</response>
+            <response code="404">admin introuvable pour la valeur specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.ArticleController.GetArticle">
+            <summary>
+            Retourne la liste des Article
+            </summary>
+            <remarks>Je manque d'imagination</remarks>  
+            <response code="200">Article selectionné</response>
+            <response code="404">Article introuvable</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.ArticleController.GetArticle(System.Int32)">
+            <summary>
+            Retourne un Article specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du Article a retourné</param>   
+            <response code="200">Article selectionné</response>
+            <response code="404">Article introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.ArticleController.CreateArticle(offreService.Models.Article)">
+            <summary>
+            Créer un article à partir de ses attributs
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="article">objet article de la classe article du Article à créer</param>  
+            <response code="200">article selectionné</response>
+            <response code="404">article introuvable pour l'attribut specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.ArticleController.UpdateArticle(System.Int32,offreService.Models.Article)">
+            <summary>
+            modifie un article specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du article à modifier</param>   
+            <param name="article">classe d'entité du article à modifier</param>
+            <response code="200">article selectionné</response>
+            <response code="404">article introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.ArticleController.DeleteArticle(System.Int32)">
+            <summary>
+            supprime un article specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du article à supprimer</param>   
+            <response code="200">article selectionné</response>
+            <response code="404">article introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.ArticleController.Search(System.String)">
+            <summary>
+            recherche un article specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="name">valeur de l'article à rechercher</param>   
+            <response code="200">article recherché</response>
+            <response code="404">article introuvable pour la valeur specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.ArticleTypeController.GetArticleType">
+            <summary>
+            Retourne la liste des ArticleType
+            </summary>
+            <remarks>Je manque d'imagination</remarks>  
+            <response code="200">ArticleType selectionné</response>
+            <response code="404">ArticleType introuvable</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.ArticleTypeController.GetArticleType(System.Int32)">
+            <summary>
+            Retourne un ArticleType specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du ArticleType a retourné</param>   
+            <response code="200">ArticleType selectionné</response>
+            <response code="404">ArticleType introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.ArticleTypeController.CreateArticleType(offreService.Models.ArticleType)">
+            <summary>
+            Créer un articleType à partir de ses attributs
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="articleType">objet articleType de la classe articleType du ArticleType à créer</param>  
+            <response code="200">articleType selectionné</response>
+            <response code="404">articleType introuvable pour l'attribut specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.ArticleTypeController.UpdateArticleType(System.Int32,offreService.Models.ArticleType)">
+            <summary>
+            modifie un articleType specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du articleType à modifier</param>   
+            <param name="articleType">classe d'entité du articleType à modifier</param>
+            <response code="200">articleType selectionné</response>
+            <response code="404">articleType introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.ArticleTypeController.DeleteArticleType(System.Int32)">
+            <summary>
+            supprime un articleType specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du articleType à supprimer</param>   
+            <response code="200">articleType selectionné</response>
+            <response code="404">articleType introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.ArticleTypeController.Search(System.String)">
+            <summary>
+            recherche un articleType specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="name">valeur de l'articleType à rechercher</param>   
+            <response code="200">articleType recherché</response>
+            <response code="404">articleType introuvable pour la valeur specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
         <member name="M:offreService.Controllers.ClientController.GetAllClient">
             <summary>
             Retourne la liste des clients
             </summary>
             <remarks>Je manque d'imagination</remarks>  
             <response code="200">client selectionné</response>
-            <response code="404">client introuvable pour l'id specifié</response>
+            <response code="404">client introuvable</response>
             <response code="500">Oops! le service est indisponible pour le moment</response>
         </member>
         <member name="M:offreService.Controllers.ClientController.Details(System.Nullable{System.Int32})">
@@ -52,6 +232,186 @@
             <param name="id">id du client à supprimer</param>   
             <response code="200">client selectionné</response>
             <response code="404">client introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.CommentaireController.GetCommentaire">
+            <summary>
+            Retourne la liste des Commentaire
+            </summary>
+            <remarks>Je manque d'imagination</remarks>  
+            <response code="200">Commentaire selectionné</response>
+            <response code="404">Commentaire introuvable</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.CommentaireController.GetCommentaire(System.Int32)">
+            <summary>
+            Retourne un Commentaire specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du Commentaire a retourné</param>   
+            <response code="200">Commentaire selectionné</response>
+            <response code="404">Commentaire introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.CommentaireController.CreateCommentaire(offreService.Models.Commentaire)">
+            <summary>
+            Créer un commentaire à partir de ses attributs
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="commentaire">objet commentaire de la classe commentaire du Commentaire à créer</param>  
+            <response code="200">commentaire selectionné</response>
+            <response code="404">commentaire introuvable pour l'attribut specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.CommentaireController.UpdateCommentaire(System.Int32,offreService.Models.Commentaire)">
+            <summary>
+            modifie un commentaire specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du commentaire à modifier</param>   
+            <param name="commentaire">classe d'entité du commentaire à modifier</param>
+            <response code="200">commentaire selectionné</response>
+            <response code="404">commentaire introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.CommentaireController.DeleteCommentaire(System.Int32)">
+            <summary>
+            supprime un commentaire specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du commentaire à supprimer</param>   
+            <response code="200">commentaire selectionné</response>
+            <response code="404">commentaire introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.CommentaireController.Search(System.String)">
+            <summary>
+            recherche un commentaire specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="name">valeur du commentaire à rechercher</param>   
+            <response code="200">commentaire recherché</response>
+            <response code="404">commentaire introuvable pour la valeur specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.CompteController.GetCompte">
+            <summary>
+            Retourne la liste des Compte
+            </summary>
+            <remarks>Je manque d'imagination</remarks>  
+            <response code="200">Compte selectionné</response>
+            <response code="404">Compte introuvable</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.CompteController.GetCompte(System.Int32)">
+            <summary>
+            Retourne un Compte specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du Compte a retourné</param>   
+            <response code="200">Compte selectionné</response>
+            <response code="404">Compte introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.CompteController.CreateCompte(offreService.Models.Compte)">
+            <summary>
+            Créer un compte à partir de ses attributs
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="compte">objet compte de la classe compte du Compte à créer</param>  
+            <response code="200">compte selectionné</response>
+            <response code="404">compte introuvable pour l'attribut specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.CompteController.UpdateCompte(System.Int32,offreService.Models.Compte)">
+            <summary>
+            modifie un compte specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du compte à modifier</param>   
+            <param name="compte">classe d'entité du compte à modifier</param>
+            <response code="200">compte selectionné</response>
+            <response code="404">compte introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.CompteController.DeleteCompte(System.Int32)">
+            <summary>
+            supprime un compte specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du compte à supprimer</param>   
+            <response code="200">compte selectionné</response>
+            <response code="404">compte introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.CompteController.Search(System.String)">
+            <summary>
+            recherche un compte specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="name">valeur du compte à rechercher</param>   
+            <response code="200">compte recherché</response>
+            <response code="404">compte introuvable pour la valeur specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.DiscussionController.GetDiscussion">
+            <summary>
+            Retourne la liste des Discussion
+            </summary>
+            <remarks>Je manque d'imagination</remarks>  
+            <response code="200">Discussion selectionné</response>
+            <response code="404">Discussion introuvable</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.DiscussionController.GetDiscussion(System.Int32)">
+            <summary>
+            Retourne un Discussion specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id de la discussion à retourner</param>   
+            <response code="200">Discussion selectionné</response>
+            <response code="404">Discussion introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.DiscussionController.CreateDiscussion(offreService.Models.Discussion)">
+            <summary>
+            Créer un discussion à partir de ses attributs
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="discussion">objet discussion de la classe discussion du Discussion à créer</param>  
+            <response code="200">discussion selectionné</response>
+            <response code="404">discussion introuvable pour l'attribut specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.DiscussionController.UpdateDiscussion(System.Int32,offreService.Models.Discussion)">
+            <summary>
+            modifie un discussion specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du discussion à modifier</param>   
+            <param name="discussion">classe d'entité du discussion à modifier</param>
+            <response code="200">discussion selectionné</response>
+            <response code="404">discussion introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.DiscussionController.DeleteDiscussion(System.Int32)">
+            <summary>
+            supprime un discussion specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="id">id du discussion à supprimer</param>   
+            <response code="200">discussion selectionné</response>
+            <response code="404">discussion introuvable pour l'id specifié</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:offreService.Controllers.DiscussionController.Search(System.String)">
+            <summary>
+            recherche un discussion specifique à partir de son id
+            </summary>
+            <remarks>Je manque d'imagination</remarks>
+            <param name="name">valeur de la discussion à rechercher</param>   
+            <response code="200">discussion recherché</response>
+            <response code="404">discussion introuvable pour la valeur specifié</response>
             <response code="500">Oops! le service est indisponible pour le moment</response>
         </member>
     </members>

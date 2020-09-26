@@ -1,16 +1,14 @@
 
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using offreService.Data;
+using offreService.Models;
+
 namespace offreService.Controllers
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Threading.Tasks;
-    using Microsoft.AspNetCore.Mvc;
-    using Microsoft.AspNetCore.Mvc.Rendering;
-    using Microsoft.EntityFrameworkCore;
-    using offreService.Data;
-    using offreService.Models;
-
 
     [Produces("application/json")]
     [Route("api/[controller]")]
@@ -30,7 +28,7 @@ namespace offreService.Controllers
         /// </summary>
         /// <remarks>Je manque d'imagination</remarks>  
         /// <response code="200">client selectionné</response>
-        /// <response code="404">client introuvable pour l'id specifié</response>
+        /// <response code="404">client introuvable</response>
         /// <response code="500">Oops! le service est indisponible pour le moment</response>
         [HttpGet]
         [ProducesResponseType(typeof(Client), 200)]
@@ -92,7 +90,7 @@ namespace offreService.Controllers
             return CreatedAtAction(nameof(Create), new { id = entity.idClient }, entity);
         }
 
-        // PUT: api/TodoItems/5
+        // PUT: api/Client/5
         /// <summary>
         /// modifie un client specifique à partir de son id
         /// </summary>
